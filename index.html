@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('.preloader').addClass('complete')
+        })
+    </script>
+    <script src="fn.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="reveal">
+            <span>.</span>
+            <span>.</span>
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+    </div>
+    <!--Preloader-->
+    <a id="nav-toggle" onclick="if(flag%2!=0){setTimeout(fun3, 800);}else{fun3();}">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div id="nav-container">
+        <div id="nav-overlay"></div>
+        <div class="navigation" id="nav-fullscreen">
+            <ul>
+                <li><a href="#" data-text="Home">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/shivansh-choudhary-22110218b/" data-text="Experience">Experience</a></li>
+                <li><a href="https://www.linkedin.com/in/shivansh-choudhary-22110218b/" data-text="Projects">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/shivansh-choudhary-22110218b/" data-text="About">About</a></li>
+                <li><a href="c.html" data-text="Connect">Connect With Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="data/l1.png" class="lo">
+    </div>
+
+    <div class="adminActions">
+        <input type="checkbox" name="adminToggle" class="adminToggle" />
+        <a class="adminButton" href="#!"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="adminButtons">
+            <a href="#!" title="Green" class="htm" style="--theme-primary:#0f0;" onclick="cf = 0;"></a>
+            <a href="#!" title="Yellow" class="htm" style="--theme-primary:#fffd04;" onclick="cf = 1;"></a>
+            <a href="#!" title="White" class="htm" style="--theme-primary:#FAFDF6;" onclick="cf = 2;"></a>
+        </div>
+    </div>
+    
+    <div class="grid-container1 gc">
+        <!--
+        <div class="item1">
+            <ul class="nav_bar">
+                <li class="active"><a href="grid.html">home</a></li>
+                <li><a href="#prof">professional</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#exp">experience</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+        </div>
+-->
+        <div class="item2"></div>
+        <div class="item3">
+            <div class="intro">
+                Shivansh Choudhary
+            </div>
+            <div class="t_rotator">
+                <h2>I'm <span class="type"></span></h2>
+                <div class="desc">
+                    I am a 1st Year Undergraduate at IIIT Delhi pursuing B.Tech in Computer Science and Engineering.I am really passionate about Competitive Programming and Web Development.
+                </div>
+            </div>
+
+            <div class="hire" onmouseover="fun1()" onmouseout="fun2()">
+                <a href="#work">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Let's work together
+                </a>
+            </div>
+
+        </div>
+        <div class="item4">
+            <img src="data/clint-patterson-dYEuFB8KQJk-unsplash.jpg" class="me fade-scroll">
+        </div>
+    </div>
+    <div class="grid-container2 gc">
+        <div class="item5 heading" id="prof">
+            <div>Knowledge level in skills</div>
+            <div>Professional</div>
+        </div>
+        <div class="item6">
+
+        </div>
+        <div class="item7">
+            <div class="skills">
+                <span class="name">Python</span>
+                <div class="percent">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+                <span class="value">95%</span>
+            </div>
+
+            <div class="skills">
+                <span class="name">C++</span>
+                <div class="percent">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <span class="value">90%</span>
+            </div>
+
+            <div class="skills">
+                <span class="name">C</span>
+                <div class="percent">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+                <span class="value">95%</span>
+            </div>
+
+            <div class="skills">
+                <span class="name">Data Structure and Algo</span>
+                <div class="percent">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <span class="value">90%</span>
+            </div>
+
+            <div class="skills">
+                <span class="name">HTML5</span>
+                <div class="percent">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <span class="value">80%</span>
+            </div>
+
+            <div class="skills">
+                <span class="name">CSS</span>
+                <div class="percent">
+                    <div class="progress" style="width: 98%"></div>
+                </div>
+                <span class="value">98%</span>
+            </div>
+
+
+            <div class="skills">
+                <span class="name">Javascript</span>
+                <div class="percent">
+                    <div class="progress" style="width: 30%"></div>
+                </div>
+                <span class="value">30%</span>
+            </div>
+        </div>
+        <div class="item8">
+
+        </div>
+    </div>
+
+    <div class="grid-container3 gc">
+        <div class="item9 heading" id="exp">
+            <div>my work</div>
+            <div>portfolio</div>
+        </div>
+        <div class="item10">
+            <a class="promo" style="--overlay-color: hotpink" href="https://drive.google.com/drive/folders/1X11NgV4_7qk_AuKgnl6fFPhKqqX_4q_i">
+                <div class="image-wrapper"><img src="https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=800&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" /></div>
+                <h2 class="title" data-cta="Explore →">ICONS</h2>
+            </a>
+        </div>
+        <div class="item11">
+            <a class="promo" style="--overlay-color: yellow" href="https://drive.google.com/drive/folders/1X11NgV4_7qk_AuKgnl6fFPhKqqX_4q_i">
+                <div class="image-wrapper"><img src="https://images.unsplash.com/photo-1523806762236-1d3a6b7eb3fd?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=800&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" /></div>
+                <h2 class="title" data-cta="Explore →">POSTERS</h2>
+            </a>
+        </div>
+        <div class="item12">
+            <a class="promo" style="--overlay-color: dodgerblue" href="https://drive.google.com/drive/folders/1X11NgV4_7qk_AuKgnl6fFPhKqqX_4q_i">
+                <div class="image-wrapper"><img src="https://images.unsplash.com/photo-1548008116-bcfec1f4c812?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=800&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" /></div>
+                <h2 class="title" data-cta="Explore →">BANNERS</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="grid-container4 gc">
+        <div class="item13 heading" id="service">
+            <div>Providing service</div>
+            <div>How can i help you..</div>
+        </div>
+        <div class="item14">
+
+        </div>
+        <div class="item15">
+            <div class="all">
+                <div class="lefter">
+                    <div class="text">Competitive Coding</div>
+                </div>
+                <div class="left">
+                    <div class="text">Graphic Design</div>
+                </div>
+                <div class="center">
+                    <div class="explainer"><span>SERVICES</span></div>
+                    <div class="text">UI/UX Desing</div>
+                </div>
+                <div class="right">
+                    <div class="text">Front end Development</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item16">
+
+        </div>
+    </div>
+
+    <div class="grid-container5 gc">
+        <div class="item17 heading" id="work">
+            <div>let's work together</div>
+            <div>get in touch</div>
+        </div>
+        <div class="item18">
+
+        </div>
+        <div class="item19 box">
+            <form>
+                <div class="inputBox">
+                    <input type="text" name="" required="">
+                    <label>Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="">
+                    <label>Email</label>
+                </div>
+                <div class="select-container">
+                    <div class="select-box">
+                        <div class="options-container">
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="film" name="category" />
+                                <label for="film">Software Developer</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="science" name="category" />
+                                <label for="science">Front end Developer</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="art" name="category" />
+                                <label for="art">Back end Developer</label>
+                            </div>
+
+                        </div>
+
+                        <div class="selected">
+                            Service
+                        </div>
+                    </div>
+                </div>
+
+                <textarea placeholder="Your Message" id="autoresizing"></textarea>
+                <input type="submit" name="" value="submit">
+            </form>
+        </div>
+        <div class="item20">
+
+        </div>
+    </div>
+
+    <div class="grid-container6">
+        <div class="item21">
+
+        </div>
+        <div class="item22">
+            &copy; Copyright 2021 Shivansh Choudhary.
+        </div>
+    </div>
+
+    <img src="data/clint-patterson-dYEuFB8KQJk-unsplash.jpg" style="width: 100px; display: none;">
+    <img src="data/clint-patterson-dYEuFB8KQJk-unsplash.jpg" style="width: 100px; display: none;">
+    <!--SCRIPTS        SCRIPTS        SCRIPTS      SCRIPTS-->
+    <script src="grid.js"></script>
+    <script src="typed.js"></script>
+
+    <script>
+        var typed = new Typed(".type", {
+            strings: [
+                "Coder",
+                "Front end developer",
+                "Back end developer",
+                "Open source Contributor"
+
+            ],
+            typeSpeed: 74,
+            backSpeed: 38,
+            loop: true
+        });
+    </script>
+
+    <!--For changing active class of nav_bar-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('click', 'ul li', function() {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+    <!--for fading image-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            var documentEl = $(document),
+                fadeElem = $('.fade-scroll');
+
+
+            documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = 0;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos - elemOffsetTop) / 500);
+                });
+            });
+
+        });
+    </script>
+
+    <!--creating soothing effect-->
+    <script type="text/javascript">
+        var flag = 50; //global variable  
+        var cf = 0;
+
+        function fun1() {
+            var x = document.getElementsByClassName("me");
+            if (cf == 0) {
+                x[0].src = "data/clint-patterson-dYEuFB8KQJk-unsplash.jpg";
+            }
+            else if(cf == 1) {
+                x[0].src = "data/clint-patterson-dYEuFB8KQJk-unsplash.jpg";
+            }
+            else {
+                x[0].src = "data/clint-patterson-dYEuFB8KQJk-unsplash.jpg";
+            }
+
+            var y = document.getElementsByClassName("lo");
+            y[0].style.opacity = 0.1;
+            var y = document.getElementsByClassName("t_rotator");
+            y[0].style.opacity = 0.1;
+            var y = document.getElementsByClassName("intro");
+            y[0].innerHTML = "You are taking right step...";
+            y[0].style.transform = "scale(1.5) translateX(13%)";
+
+            const element = document.querySelector('.explainer')
+            const style = getComputedStyle(element)
+
+            y[0].style.color = style.backgroundColor;
+            y[0].style.fontWeight = "700";
+        }
+
+        function fun2() {
+            var x = document.getElementsByClassName("me");
+            x[0].src = "data/clint-patterson-dYEuFB8KQJk-unsplash.jpg";
+            var y = document.getElementsByClassName("lo");
+            y[0].style.opacity = 1;
+            var y = document.getElementsByClassName("t_rotator");
+            y[0].style.opacity = 1;
+            var y = document.getElementsByClassName("intro");
+            y[0].style.transform = "scale(1)";
+            var y = document.getElementsByClassName("intro");
+            y[0].innerHTML = "shivansh Choudhary";
+            y[0].style.transform = "scale(1) translateX(0%)";
+            y[0].style.color = "#777";
+            y[0].style.fontWeight = "400";
+        }
+
+        function fun3() {
+            var y = document.getElementById("nav-container");
+            if (flag % 2 == 0) {
+                y.style.zIndex = ("2");
+                y.style.height = ("100vh");
+                y.style.width = ("100%");
+                y.style.position = ("fixed");
+                flag++;
+            } else {
+                y.style.zIndex = ("0");
+                y.style.height = ("0vh");
+                y.style.width = ("0%");
+                y.style.position = ("absolute");
+                flag++;
+            }
+
+        }
+    </script>
+
+    <!--for last form autoresizing of texbox-->
+    <script type="text/javascript">
+        textarea = document.querySelector("#autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+            var y = document.getElementsByClassName("grid-container6");
+            y[0].style.marginTop = this.scrollHeight + 'px';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(".htm").on("click", function() {
+            var primaryColor = $(this).css("--theme-primary");
+
+            
+            $(document.body).css("--primary-color", primaryColor);
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

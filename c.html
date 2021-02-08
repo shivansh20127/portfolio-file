@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="c.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('.preloader').addClass('complete')
+        })
+    </script>
+    <script src="fn.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="reveal">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+    </div>
+    <!--Preloader-->
+    <a id="nav-toggle" onclick="if(flag%2!=0){setTimeout(fun3, 800);}else{fun3();}">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div id="nav-container">
+        <div id="nav-overlay"></div>
+        <div class="navigation" id="nav-fullscreen">
+            <ul>
+                <li><a href="index.html" data-text="Home">Home</a></li>
+                <li><a href="#" data-text="Experience">Experience</a></li>
+                <li><a href="#" data-text="Projects">Projects</a></li>
+                <li><a href="#" data-text="About">About</a></li>
+                <li><a href="#" data-text="Connect">Connect With Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="data/l1.png" class="lo">
+    </div>
+
+    <div class="adminActions">
+        <input type="checkbox" name="adminToggle" class="adminToggle" />
+        <a class="adminButton" href="#!"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="adminButtons">
+            <a href="#!" title="Green" class="htm" style="--theme-primary:#0f0;" onclick="cf = 0;"></a>
+            <a href="#!" title="Yellow" class="htm" style="--theme-primary:#fffd04;" onclick="cf = 1;"></a>
+            <a href="#!" title="White" class="htm" style="--theme-primary:#FAFDF6;" onclick="cf = 2;"></a>
+        </div>
+    </div>
+
+    <div id="3d" style="padding-left: 33%; padding-top: 15%;">
+        <ul>
+           <li>
+                <a href="https://www.youtube.com/channel/UCjm_PuaNb1u8aTR6RNyhE-Q">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-youtube-play"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/shivansh.choudhary.1217727">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-facebook"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-github"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/chaudhary._.shivansh.13/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-instagram"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/shivansh-choudhary-22110218b/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--SCRIPTS        SCRIPTS        SCRIPTS      SCRIPTS-->
+    <script src="grid.js"></script>
+
+    <!--creating soothing effect-->
+    <script type="text/javascript">
+        var flag = 50; //global variable  
+        function fun3() {
+            var y = document.getElementById("nav-container");
+            if (flag % 2 == 0) {
+                y.style.zIndex = ("2");
+                y.style.height = ("100vh");
+                y.style.width = ("100%");
+                y.style.position = ("fixed");
+                flag++;
+            } else {
+                y.style.zIndex = ("0");
+                y.style.height = ("0vh");
+                y.style.width = ("0%");
+                y.style.position = ("absolute");
+                flag++;
+            }
+
+        }
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(".htm").on("click", function() {
+            var primaryColor = $(this).css("--theme-primary");
+
+
+            $(document.body).css("--primary-color", primaryColor);
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
